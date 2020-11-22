@@ -1,0 +1,79 @@
+.content {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+    margin: auto;
+    width: 35rem;
+    height: 28rem;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 3px 3px silver;
+    padding: 25px;
+}
+.card label {
+    float: left;
+    padding: 10px 10px 14px 0;
+    width: 8rem;
+    margin-top: 10px;
+    clear: left;
+}
+.card input {
+    float: right;
+    border: 2px solid #F4F0F0;
+    padding: 8px;
+    width: 23.7rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.card button {
+    margin-top: 1rem;
+    float: right;
+    width: 112px;
+    height: 37px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #A7A5A5;
+    border: 1px solid #9C9B9B;
+    color: #525050;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #9B9A9A;
+}
+.card button:active {
+    transform: scale(0.98);
+}
+.card select {
+    float: right;
+    border: 2px solid #F4F0F0;
+    padding: 8px;
+    width: 25rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.error-field {
+    color: #F9166C;
+}
+@media only screen and (max-width: 768px){
+    .card {
+        width: auto;
+        height: auto;
+        box-shadow: none;
+    }
+    .card label{
+        margin-top: 0;
+    }
+    .card input {
+        margin-top: 0;
+    }
+}
